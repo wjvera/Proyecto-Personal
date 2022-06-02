@@ -35,7 +35,7 @@ header h1{
 .s1, .s2, .s3, .s4, .s5{
     /*border: 1px solid green;*/
     width: 100%;
-    min-height: 50rem;
+    min-height: 60rem;
 }
 
 .principal h1{
@@ -43,5 +43,8 @@ header h1{
     display: flex;
     justify-content: center;
     font-size: var(--subtitulos);
-    margin-top: 10rem;
+    margin-top: 5rem;
+    font-weight: bold;
 }
+
+
