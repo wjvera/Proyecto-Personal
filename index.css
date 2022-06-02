@@ -69,7 +69,6 @@ header h1 {
   }
 
   .panel {
-    border: 1px solid red;
     position: fixed;
     z-index: 997;
     top: 0;
@@ -84,16 +83,22 @@ header h1 {
     overflow-y: auto;
     background-color: var(--second-modal-color);
     /*opacity: 0;
-    visibility: hidden;
-    transition: transform 0.3s ease, opacity 0.5s ease;*/
-    /* De arriba 
-    transform: translate(0, -100%);*/
+    visibility: hidden;*/
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    /* De arriba */
+    transform: translate(0, -100%);
     /* De abajo 
     transform: translate(0, 100%);*/
     /* De la derecha 
     transform: translate(100%, 0);*/
     /* De la izquierda 
     transform: translate(-100%, 0);*/
+  }
+
+  .panel.is-active {
+    transform: translate(0, 0);
+    /*opacity: 1;
+    visibility: visible;*/
   }
 
 
@@ -105,8 +110,8 @@ header h1 {
     z-index: 999;
     bottom: 1vh;
     right: 1vw;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 100%;
     padding: 0;
     display: flex;
