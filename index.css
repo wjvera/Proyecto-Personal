@@ -138,11 +138,15 @@ header h1 {
     font-size: 3rem;
     text-decoration: none;
     color: var(--main-color);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .menu a:hover {
     font-weight: bold;
     color: var(--second-color);
     background-color: var(--main-modal-color);
+  }
+
+  #reloj{
+    font-size: 3rem;
   }
