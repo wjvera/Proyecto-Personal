@@ -36,6 +36,7 @@ export function digitalClock(re, btnStart, btnStop) {
 export function alarm(sonido, alarmStart, alarmStop) {
 
     let alarm
+    
     const $audio = d.createElement('audio') //creamos un elemento de tipo audio
 
     //el sonido que le pasamos por parametros se guardara en la propiedad source de audio
