@@ -10,6 +10,12 @@ export function moverBalon(event, pelota, area){
     const $pelota = docu.querySelector(pelota)
     const $area = docu.querySelector(area)
 
+    const limitePelota = $pelota.getBoundingClientRect()
+    const limiteArea = $area.getBoundingClientRect()
+
+    console.log('pelota: ',limitePelota)
+    console.log('area ',limiteArea)
+
 
     console.log(event.keyCode)
     console.log(event.key)
@@ -18,19 +24,23 @@ export function moverBalon(event, pelota, area){
 
         case 37:
             event.preventDefault()
-            x--
+
+            //mientras sea mayor muevete
+            if(limitePelota.left > limiteArea.left) x--
             break; //izquierda
         case 38:
             event.preventDefault()
-            y--
+            if(limitePelota.top > limiteArea.top) y--
             break; //arriba
         case 39:
             event.preventDefault()
-            x++
+
+            //mientras sea mayor muevete
+            if(limitePelota.right < limiteArea.right) x++
             break; //derecha
         case 40:
             event.preventDefault()
-            y++
+            if(limitePelota.bottom < limiteArea.bottom) y++
             break; //abajo
     
         default:
