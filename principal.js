@@ -1,11 +1,15 @@
 
 //cuando el export es por default
-import hamburguerMenu from "./hamburguesa.js";
+import hamburguerMenu from "./Modulos/hamburguesa.js";
 
 // cuando no es por default 
-import { digitalClock, alarm } from "./reloj.js";
+import { digitalClock, alarm } from "./Modulos/reloj.js";
 
-import { atajos, moverBalon } from "./teclado.js";
+import { atajos, moverBalon } from "./Modulos/teclado.js";
+
+//cuando el export es por default
+import cuentaRegresiva from './Modulos/Regresivo.js'
+import subir from "./Modulos/ScrollArriba.js";
 
 
 const d = document
@@ -18,7 +22,9 @@ d.addEventListener('DOMContentLoaded', (event)=>{
 
     alarm('assets/estornudo.mp3', '#activar-alarma', '#desactivar-alarma')
 
-    
+    cuentaRegresiva('#countdown', 'July 03, 2022 15:53:00', '♫ Feliz cumpleaños ♫')
+
+    subir('.scroll-top-btn')
 })
 
 
