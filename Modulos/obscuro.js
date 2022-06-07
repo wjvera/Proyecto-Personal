@@ -13,6 +13,7 @@ export default function temaObscuro(boton, classDark){
     let sol = "🌞"
     let luna = "🌙"
 
+
     //aplicamos el evento al boton
 
     d.addEventListener('click', (event) =>{
@@ -21,17 +22,17 @@ export default function temaObscuro(boton, classDark){
 
             console.log($botonTema.textContent)
             
-            if ($botonTema.textContent === luna) {
+            if($botonTema.textContent === luna) {
                 
                 //ahora vamos a aplicarle el color obscuro recorriendo sus nodos
-                htmlBody.forEach(element => {
+                htmlBody.forEach(element => (
                     element.classList.add(classDark)
-                })
+                ))
                 $botonTema.textContent = sol
             } else {
-                htmlBody.forEach(element => {
+                htmlBody.forEach(element => (
                     element.classList.remove(classDark)
-                })
+                ))
                 $botonTema.textContent = luna
             }
         }
