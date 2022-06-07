@@ -10,6 +10,7 @@ import { atajos, moverBalon } from "./Modulos/teclado.js";
 //cuando el export es por default
 import cuentaRegresiva from './Modulos/Regresivo.js'
 import subir from "./Modulos/ScrollArriba.js";
+import temaObscuro from "./Modulos/obscuro.js";
 
 
 const d = document
@@ -25,6 +26,9 @@ d.addEventListener('DOMContentLoaded', (event)=>{
     cuentaRegresiva('#countdown', 'July 03, 2022 15:53:00', '♫ Feliz cumpleaños ♫')
 
     subir('.scroll-top-btn')
+
+    temaObscuro('.dark-theme-btn', 'dark-mode')
+
 })
 
 
