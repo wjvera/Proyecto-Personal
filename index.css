@@ -3,6 +3,7 @@
     --font-size: 62.5%;
     --main-color: #f7df1e;
     --second-color: #222;
+    --estilo-oscuro: rgb(78, 78, 78);
     --main-modal-color: rgba(247, 222, 30, 0.85);
     --second-modal-color: rgba(34, 34, 34, 0.85);
     --container-width: 1200px;
@@ -225,6 +226,6 @@ header h1 {
 }
 
 .dark-mode {
-  background-color: var(--second-color);
-  color: var(--main-color);
+  background-color: var(--estilo-oscuro);
+  color: white;
 }

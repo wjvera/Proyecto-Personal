@@ -27,9 +27,11 @@ d.addEventListener('DOMContentLoaded', (event)=>{
 
     subir('.scroll-top-btn')
 
-    temaObscuro('.dark-theme-btn', 'dark-mode')
+    
 
 })
+
+temaObscuro('.dark-theme-btn', 'dark-mode')
 
 
 // el teclado tiene 3 tipos de eventos
