@@ -14,6 +14,7 @@ import temaObscuro from "./Modulos/obscuro.js";
 import responsiveMedia from "./Modulos/objetosResponsive.js";
 import tester from "./Modulos/responsiveTester.js";
 import detectar from "./Modulos/deteccionDispositivos.js";
+import detectarInt from "./Modulos/detectarInternet.js";
 
 
 const d = document
@@ -35,9 +36,14 @@ d.addEventListener('DOMContentLoaded', (event)=>{
 
     tester('responsive-tester')
     detectar('info-device')
+
+    
 })
 
 temaObscuro('.dark-theme-btn', 'dark-mode')
+
+//no necesita parametros
+detectarInt()
 
 
 // el teclado tiene 3 tipos de eventos
