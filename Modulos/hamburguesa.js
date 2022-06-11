@@ -6,7 +6,7 @@ export default function hamburguerMenu (pnlBtn, panel, quitar){
 
     d.addEventListener('click', event =>{
 
-        console.log(event.target)
+        //console.log(event.target)
 
         if (event.target.matches(pnlBtn) || event.target.matches(`${pnlBtn} *`)) {
             d.querySelector(panel).classList.toggle('is-active')

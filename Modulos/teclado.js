@@ -13,12 +13,12 @@ export function moverBalon(event, pelota, area){
     const limitePelota = $pelota.getBoundingClientRect()
     const limiteArea = $area.getBoundingClientRect()
 
-    console.log('pelota: ',limitePelota)
-    console.log('area ',limiteArea)
+    //console.log('pelota: ',limitePelota)
+    //console.log('area ',limiteArea)
 
 
-    console.log(event.keyCode)
-    console.log(event.key)
+    //console.log(event.keyCode)
+    //console.log(event.key)
 
     switch (event.keyCode) {
 

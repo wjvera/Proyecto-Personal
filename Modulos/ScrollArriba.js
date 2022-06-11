@@ -11,7 +11,7 @@ export default function subir(boton){
 
         //obtenemos los valores del alto del scroll
         let medirScroll = w.pageYOffset || d.documentElement.scrollTop
-        console.log(medirScroll)
+       // console.log(medirScroll)
         
 
         //mientras sea menor de 600 no muestres el boton
