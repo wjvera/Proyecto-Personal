@@ -15,6 +15,7 @@ import responsiveMedia from "./Modulos/objetosResponsive.js";
 import tester from "./Modulos/responsiveTester.js";
 import detectar from "./Modulos/deteccionDispositivos.js";
 import detectarInt from "./Modulos/detectarInternet.js";
+import geoLocalizar from "./Modulos/geolocalizacion.js";
 
 
 const d = document
@@ -37,13 +38,18 @@ d.addEventListener('DOMContentLoaded', (event)=>{
     tester('responsive-tester')
     detectar('info-device')
 
-    
+    geoLocalizar('geoloca')
 })
+
 
 temaObscuro('.dark-theme-btn', 'dark-mode')
 
+
 //no necesita parametros
 detectarInt()
+
+
+
 
 
 // el teclado tiene 3 tipos de eventos
