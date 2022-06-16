@@ -16,6 +16,7 @@ import tester from "./Modulos/responsiveTester.js";
 import detectar from "./Modulos/deteccionDispositivos.js";
 import detectarInt from "./Modulos/detectarInternet.js";
 import geoLocalizar from "./Modulos/geolocalizacion.js";
+import filtrarBusqueda from "./Modulos/Filtros.js";
 
 
 const d = document
@@ -39,6 +40,9 @@ d.addEventListener('DOMContentLoaded', (event)=>{
     detectar('info-device')
 
     geoLocalizar('geoloca')
+
+               //clase del input | clase de cada elemento
+    filtrarBusqueda('.card-filter', '.card')
 })
 
 
