@@ -17,6 +17,7 @@ import detectar from "./Modulos/deteccionDispositivos.js";
 import detectarInt from "./Modulos/detectarInternet.js";
 import geoLocalizar from "./Modulos/geolocalizacion.js";
 import filtrarBusqueda from "./Modulos/Filtros.js";
+import sortear from "./Modulos/Sorteo.js";
 
 
 const d = document
@@ -43,6 +44,8 @@ d.addEventListener('DOMContentLoaded', (event)=>{
 
                //clase del input | clase de cada elemento
     filtrarBusqueda('.card-filter', '.card')
+
+    sortear('#ganador', '.player')
 })
 
 
